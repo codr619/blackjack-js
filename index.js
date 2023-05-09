@@ -5,6 +5,7 @@ let sum=0;
 let cards=[];
 let cardsEl = document.getElementById("cards-el");
 let sumEl = document.getElementById("sum-el");
+let userEl=document.getElementById("user-el");
 // let sumEl=document.querySelector("sum-el");
 function startGame() {
   
@@ -40,6 +41,7 @@ function renderGame() {
   sumEl.textContent = "sum:" + sum;
 }
 function newCard() {
+  if (sum<22){
   
   console.log("new card");
   let nCard = randomNumber();
@@ -47,6 +49,7 @@ function newCard() {
   cards.push(nCard);
   renderGame();
   console.log(cards);
+}
 }
 function randomNumber() {
   randomCard = Math.floor(Math.random() * 13) + 1;
@@ -58,3 +61,13 @@ function randomNumber() {
     return randomCard;
   }
 }
+let user={
+  name:"Peter",
+  account:200,
+  hiThere:function(){
+alert("Hi,there,"+user.name);
+  }
+}
+
+userEl.textContent=user.name+":$"+user.account;
+user.hiThere();
