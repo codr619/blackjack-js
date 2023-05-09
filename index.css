@@ -1,0 +1,38 @@
+/* Complete the CSS styling according to the provided design */
+
+body {
+    background-color: green;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+}
+#start{
+    color: green;
+    font-weight: bold;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4%;
+    width: 18%;
+    padding: 4px 0 ;
+}
+button{
+    margin: 2;
+}
+#new-card{
+    color: green;
+    font-weight: bold;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4%;
+    width: 18%;
+    padding: 4px 0 ;
+
+}
